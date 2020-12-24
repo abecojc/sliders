@@ -9,32 +9,38 @@
     <title>Sliders</title>
 </head>
 <body>
+<!--Top left corner-->
     <div class="flex p-5 justify-between">
         <div class="text-5xl font-serif">
             Earls
         </div>
 <!--        side-bar menu on slide-->
-        <nav class="show-sliding-menu fixed bg-white h-screen p-8 w-64 ">
-            <p class="text-2xl p-2" >Book a Table</p>
-            <hr/>
-            <ul class="uppercase text-sm mt-6">
-                <li class="sliding-menu">MENU</li>
-                <li class="sliding-menu">LOCATIONS</li>
-                <li class="sliding-menu">GIFT CARDS</li>
+        <nav id="nav" class="show-sliding-menu fixed bg-white h-screen p-8 w-64" >
+            <p class="text-2xl p-2" id="head-nav">
+                Book a Table
+            </p>
+              <hr/>
+            <ul class="text-sm mt-6">
+                <li class="sliding-menu">COUNTRIES</li>
+                <li class="sliding-menu text-4xl">Canada</li>
+                <li class="sliding-menu text-4xl">United<br>States</li>
+                <li class="sliding-menu">Or Find Nearby Locations</li>
+                <li class="sliding-menu">Use My Location</li>
+                
             </ul>
         </nav>
         <div class="flex border-2 border-black">
-            <div class="top-menu">
-                <span img src="">Set Your <br>Location</span>
+            <div class="top-menu" id="location">
+                <span>Set Your <br>Location</span>
             </div>
-            <div class="top-menu">
+            <div class="top-menu" id="online">
                 Order <br>Online
             </div>
-            <div class="top-menu">
+            <div class="top-menu" id="delivery">
                 Get<br> Delivery
             </div>
-            <div class="top-menu text-white bg-gray-900">
-                <span img src="">Book a <br>Table</span>
+            <div class="top-menu text-white bg-gray-900" id="book-table-1">
+                <span>Book a <br>Table</span>
             </div>
             
         </div>
@@ -52,7 +58,7 @@
         </p>
     </div>
     
-    <div class="bg-yellow-900 rounded-full fixed text-white text-xl text-center bottom-0 right-0 h-40 w-40 py-14" id="book-table">
+    <div class="bg-yellow-900 rounded-full fixed text-white text-xl text-center bottom-0 right-0 h-40 w-40 py-14 cursor-pointer hover:trans " id="book-table">
         <p class="w-36 text-2xl border-b-2 border-white m-2">
             Book a Table
         </p>
