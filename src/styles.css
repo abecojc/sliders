@@ -1,0 +1,17 @@
+@tailwind utilities;
+
+@tailwind base;
+.my-bg{
+    @apply bg-gray-300 p-3;
+}
+
+.sliding-menu{
+    @apply border-b-2 border-t-2 cursor-pointer p-4 hover:bg-blue-300;
+}
+.top-menu{
+    @apply border-r-2 border-black px-5 py-3 text-sm text-center;
+}
+.show-sliding-menu{
+    @apply transform translate-x-64;
+}
+@tailwind components;
