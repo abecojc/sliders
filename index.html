@@ -10,20 +10,21 @@
 </head>
 <body>
 <!--Top left corner-->
-    <div class="flex">
+    <div class="flex justify-between">
         <div class="text-5xl my-5 ml-5 w-32 p-2 font-serif">
             Earls
         </div>
 <!--        side-bar menu on slide-->
-        <nav id="nav" class="show-sliding-menu fixed bg-white h-screen p-8 w-64" >
-            <p class="text-2xl whitespace-nowrap p-2" id="head-nav">
+        <nav id="nav" class="show-sliding-menu fixed bg-white h-screen p-8 w-80" >
+            <p class="text-xl whitespace-nowrap mb-10" id="head-nav">
                 Book a Table
+                <i class="far fa-window-close"></i>
             </p>
               <hr/>
             <ul class="text-sm mt-6">
-                <li class="sliding-menu">COUNTRIES</li>
+                <li class="sliding-menu text-xs text-gray-300">COUNTRIES</li>
                 <li class="sliding-menu text-4xl">Canada</li>
-                <li class="sliding-menu text-4xl">United<br>States</li>
+                <li class="sliding-menu whitespace-nowrap text-4xl">United States</li>
                 <li class="sliding-menu">Or Find Nearby Locations</li>
                 <li class="sliding-menu">Use My Location</li>
                 
@@ -31,8 +32,9 @@
         </nav>
 <!--        Top center menu -->
         <div class="uppercase p-5">
+            <i class="fas fa-bars"></i>
             <ul class="flex p-3 justify-between text-sm">
-                <li class="p-3">Menu</li>
+                <li class="p-3" img src="#">Menu</li>
                 <li class="p-3">Locations</li>
                 <li class="p-3">Gift cards</li>
             </ul>
@@ -62,11 +64,15 @@
         <p>
             Shop Now
         </p>
+        
         <p>
-            <img src="">
+            <i class="fas fa-universal-access"></i>
         </p>
     </div>
     
+    <div>
+    
+    </div>
     <div class="bg-yellow-900 rounded-full fixed text-white text-xl text-center bottom-0 right-0 h-40 w-40 py-14 cursor-pointer hover:trans " id="book-table">
         <p class="w-36 text-2xl border-b-2 border-white m-2">
             Book a Table
@@ -79,6 +85,7 @@
     
 
    
-<script src="app.js"></script>
+  <script src="app.js"></script>
+
 </body>
 </html>

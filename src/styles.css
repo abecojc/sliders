@@ -6,12 +6,12 @@
 }
 
 .sliding-menu{
-    @apply border-b-2 border-t-2 cursor-pointer p-4 hover:bg-blue-300;
+    @apply cursor-pointer p-4 hover:bg-blue-300 whitespace-nowrap;
 }
 .top-menu{
     @apply border-r-2 border-black px-5 py-3 text-sm text-center;
 }
 .show-sliding-menu{
-    @apply transform duration-500 ease-in-out -translate-x-72;
+    @apply transform ease-in-out duration-700 -translate-x-80;
 }
 @tailwind components;

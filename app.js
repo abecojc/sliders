@@ -10,6 +10,7 @@ const nav = document.getElementById("nav")
 tableMenu.addEventListener( "click",function(){
 
     nav.classList.toggle('show-sliding-menu')
+    headNav.innerHTML='Book a Table'
 })
 
 tableMenu2.addEventListener( "click",function(){
