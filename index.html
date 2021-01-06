@@ -5,95 +5,113 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="dist/tailwind.css">
     <title>Sliders</title>
 </head>
 <body>
+  
+  <div id="opaqueBg" class="h-screen fixed bottom-0 top-0 left-0 right-0 opacity-60 bg-yellow-200 hidden">
+<!--        side-bar menu on slide-->
+    <nav id="nav" class="show-sliding-menu fixed bg-white h-screen opacity-100 w-80" >
+<!--        title of the side bar-->
+        <div class="flex">
+            <div class="text-xl whitespace-nowrap border-b-2 px-10 py-8 border-blue-900" id="head-nav">
+                Book a Table
+            </div>
+            <span class="fas fa-times"></span>
+        </div>
+        
+        <div class="text-sm px-6 pt-6 pb-56 flex-col flex justify-between h-screen">
+            <div class="sliding-menu text-xs text-gray-300">COUNTRIES</div>
+            
+            <div>
+                <p class="sliding-menu text-4xl">Canada</p>
+                <p class="sliding-menu whitespace-nowrap text-4xl mb-8">United States</p>
+                <p class="sliding-menu mb-4">Or Find Nearby Locations</p>
+                <p class="sliding-menu border-2 border-blue-900 inline m-4">Use My Location</p>
+            </div>
+        </div>
+       
+    </nav>
+    
+  </div>
 <!--Top left corner-->
     <div class="flex justify-between">
-        <div class="text-5xl my-5 ml-5 w-32 p-2 font-serif">
-            Earls
-        </div>
-<!--        side-bar menu on slide-->
-        <nav id="nav" class="show-sliding-menu fixed bg-white h-screen p-8 w-80" >
-            <p class="text-xl whitespace-nowrap mb-10" id="head-nav">
-                Book a Table
-                <i class="far fa-window-close"></i>
-            </p>
-              <hr/>
-            <ul class="text-sm mt-6">
-                <li class="sliding-menu text-xs text-gray-300">COUNTRIES</li>
-                <li class="sliding-menu text-4xl">Canada</li>
-                <li class="sliding-menu whitespace-nowrap text-4xl">United States</li>
-                <li class="sliding-menu">Or Find Nearby Locations</li>
-                <li class="sliding-menu">Use My Location</li>
-                
-            </ul>
-        </nav>
-<!--        Top center menu -->
-        <div class="uppercase p-5">
-            <i class="fas fa-bars"></i>
-            <ul class="flex p-3 justify-between text-sm">
-                <li class="p-3" img src="#">Menu</li>
-                <li class="p-3">Locations</li>
-                <li class="p-3">Gift cards</li>
-            </ul>
-        </div>
-<!--        Top right menu-->
-        <div class="flex m-5 border-2 border-black">
-            <div class="top-menu" id="location">
-                <span>Set Your <br>Location</span>
-            </div>
-            <div class="top-menu" id="online">
-                Order <br>Online
-            </div>
-            <div class="top-menu" id="delivery">
-                Get<br> Delivery
-            </div>
-            <div class="top-menu text-white bg-gray-900" id="book-table-1">
-                <span>Book a <br>Table</span>
-            </div>
+          
+          <div class="text-4xl w-44 px-10 py-6 font-serif">
+                Earls
+          </div>
+        
+          <div class="w-screen flex justify-between p-2">
+        <!--        Top center menu -->
+                <div class="uppercase w-2/5">
+                    <ul class="p-3 flex justify-between text-sm ">
+                        <li class="p-3" >Menu</li>
+                        <li class="p-3">Locations</li>
+                        <li class="p-3">Gift cards</li>
+                    </ul>
+                </div>
             
+        <!--        Top right menu-->
+                <div class="flex justify-center text-center m-3 border-2 border-black md:whitespace">
+                    <div class="top-menu" id="location">
+                        <span>Set Your Location</span>
+                    </div>
+                    <div class="top-menu" id="online">
+                        Order Online
+                    </div>
+                    <div class="top-menu" id="delivery">
+                        Get Delivery
+                    </div>
+                    <div class="top-menu text-white bg-gray-900" id="book-table-1">
+                        <span>Book a Table</span>
+                    </div>
+                    
+                </div>
+          </div>
+        
+    </div>
+
+    <div id="access" class="ml-4 mb-4 cursor-pointer hover:pointer fixed text-5xl bottom-0 left-0 fas fa-universal-access"></div>
+
+    <div class="fixed bottom-0 top-0 left-0 right-0 opacity-60 bg-pink-200-400 hidden" id="popUp-access">
+        
+        <div class="h-3/5 w-2/5 bg-blue-400 opacity-80 shadow-xl p-2 absolute bottom-1/3 left-1/3 hidden">
+            <div class="text-2xl mb-3">
+                Accessibility Adjustments
+            </div>
         </div>
-    </div>
     
-    <div class="my-bg">
-        <p class="text-white p-24 text-7xl font-serif h-screen">
-            ALL THE <br>WAYS TO <br>HOLIDAY
-        </p>
-        
-        
-       
     </div>
 
-    <div class="h-screen bg-blue-400 w-screen">
-        Shop Now
-    </div>
-
-    <div class="h-screen bg-green-400 w-screen">
-        Shop Now
-    </div>
-
-    <div class="h-screen bg-yellow-400 w-screen">
-        Shop Now
-    </div>
-
-    <div class="bg-yellow-900 rounded-full fixed text-white text-xl text-center bottom-0 left-0 h-40 w-40 py-14 cursor-pointer hover:trans " id="access">
-        <p class="w-36 text-2xl border-b-2 border-white bg-black fas fa-universal-access">access
-        </p>
-    </div>
-
-
-<div class="bg-yellow-900 rounded-full fixed text-white text-xl text-center bottom-0 right-0 h-40 w-40 py-14 cursor-pointer hover:trans " id="book-table">
+    <div class="bg-yellow-900 mr-4 mb-4 rounded-full fixed text-white text-xl text-center bottom-0 right-0 h-40 w-40 py-14 cursor-pointer hover:trans " id="book-table">
         <p class="w-36 text-2xl border-b-2 border-white m-2">
             Book a Table
         </p>
-        
-        <p>
-            ->
-        </p>
+        <p class="-mt-1 fas fa-long-arrow-alt-right"></p>
+    </div>
+
+    <div class="my-bg">
+            <p class="text-white p-24 text-7xl font-serif h-screen">
+                ALL THE <br>WAYS TO <br>HOLIDAY
+            </p>
+           
     </div>
     
+        <div class="h-screen bg-blue-400 w-screen">
+            Shop Now
+        </div>
+    
+        <div class="h-screen bg-green-400 w-screen">
+            Shop Now
+        </div>
+    
+        <div class="h-screen bg-yellow-400 w-screen">
+            Shop Now
+        </div>
+
+   
 
    
   <script src="app.js"></script>

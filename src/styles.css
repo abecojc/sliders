@@ -2,14 +2,14 @@
 
 @tailwind base;
 .my-bg{
-    @apply bg-gray-300 p-3;
+    @apply bg-gray-300 w-screen;
 }
 
 .sliding-menu{
     @apply cursor-pointer p-4 hover:bg-blue-300 whitespace-nowrap;
 }
 .top-menu{
-    @apply border-r-2 border-black px-5 py-3 text-sm text-center;
+    @apply border-r-2 border-black p-3 flex justify-center text-sm text-center;
 }
 .show-sliding-menu{
     @apply transform ease-in-out duration-700 -translate-x-80;
