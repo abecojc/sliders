@@ -14,4 +14,5 @@
 .show-sliding-menu{
     @apply transform ease-in-out duration-700 -translate-x-80;
 }
+
 @tailwind components;
