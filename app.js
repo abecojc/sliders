@@ -3,8 +3,9 @@ const tableMenu2 = document.getElementById("book-table-1")
 const locations = document.getElementById("location")
 const online = document.getElementById("online")
 const deliveries = document.getElementById("delivery")
-let headNav = document.getElementById("head-nav")
 let menu = document.querySelector("#menu")
+let headNav = document.querySelector('#head-nav')
+let opaque = document.querySelector('#opaqueBg')
 const nav = document.getElementById("nav")
 let access = document.querySelector("#accessIcon")
 let opaque = document.querySelector("#opaqueBg")
@@ -37,8 +38,10 @@ tableMenu2.addEventListener( "click",function(){
     headNav.innerHTML='Book a Table'
 })
 
+
 locations.addEventListener( "click",function(){
     nav.classList.toggle('show-sliding-menu')
+    opaque.classList.remove('hidden')
     headNav.innerHTML='Set Your Location'
 
 })
@@ -56,4 +59,3 @@ deliveries.addEventListener( "click",function(){
 menu.addEventListener( "click",function(){
     nav.classList.toggle('show-sliding-menu')
     headNav.innerHTML='Find your Menu'
-})
